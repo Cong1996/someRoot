@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录框颜色</title>
+	<style>
+	ul,li,div,input{
+		margin:0;
+		padding: 0;
+	}
+	input{
+		padding-left: 10px;
+	}
+	li{
+		list-style-type: none;
+	}
+		.loginAlertArea{
+		position: fixed;
+		top:0;
+		left:0;
+		width: 100vW;
+		height: 100vh;
+		background: rgba(40,40,40,.2);
+	}
+	.loginAlert{
+		cursor: pointer;
+		position: absolute;
+		box-sizing: border-box;
+		width: 320px;
+		top:50%;
+		left:50%;
+		transform:translateY(-50%) translateX(-50%);
+		background-color:#fff;
+		padding: 10px 20px 20px 20px;
+		border-radius: 4px;
+	}
+	.loginAlert .title{
+		position: relative;
+		font-size:18px;
+		font-weight: 700;
+		line-height: 30px;
+		margin:10px 0;
+	}
+	.loginAlert .fa{
+		display: block;
+		line-height: 30px;
+		font-size:18px;
+		font-weight: normal;
+		color:#999;
+		position: absolute;
+		right: 0;
+		top:0;
+	}
+	.loginAlert .fa:hover{
+		color:#444;
+	}
+	.formArea li input,.submitButton{
+		box-sizing: border-box;
+		display: block;
+		width: 100%;
+		margin-top:10px;
+		border:1px solid #ddd;
+		height: 40px;
+		border-radius: 4px;
+	}
+	.submitButton{
+		background-color: rgb(0,108,255);
+		color:#fff;
+		outline: none;
+	}
+	.submitButton:active{
+		background-color:rgb(200,200,255);
+	}
+	.submitText{
+		display: block;
+		text-align: center;
+		color:rgb(0,108,255);
+		margin-top:10px;
+	}
+	.disappear{
+	display: none;
+	}
+	</style>
+</head>
+<body>
+	<button id="navLoginButton">点我</button>
+</body>
+<script src="login.js"></script>
+</html>
