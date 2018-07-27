@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>魔方</title>
+	<style>
+		#wrap{
+			position: fixed;
+			width: 100vw;
+			height: 100vh;
+			perspective: 800px;
+			overflow: hidden;
+			background:linear-gradient(to bottom,#000 0,rgb(17,162,215)  100%);
+			width: 120%;
+			height: 120%;
+			top:-10%;
+			left:-10%;
+			z-index: -1;
+		}
+
+		.mofang{
+			position: absolute;
+			left:200px;
+			transform-style:preserve-3d;
+			font-size:0;
+			top:800px;
+			animation:turnTop 10s linear infinite;
+		}
+		.mofang li{
+			box-sizing: border-box;
+			position: absolute;
+			border:.5px solid #ddd;
+			display: inline-block;
+			background:rgba(0,108,255,0);
+		}
+		@keyframes turnTop{
+			100%{
+				top:-150px;
+				transform:rotate(360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	
+</body>
+<script src="backmofang.js"></script>
+</html>
