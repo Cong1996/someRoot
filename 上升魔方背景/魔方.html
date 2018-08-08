@@ -4,41 +4,45 @@
 	<meta charset="UTF-8">
 	<title>魔方</title>
 	<style>
+		 ul,li{
+	margin:0;
+	padding:0;
+	}
 		#wrap{
 			position: fixed;
-			width: 100vw;
-			height: 100vh;
 			perspective: 800px;
 			overflow: hidden;
-			background:linear-gradient(to bottom,#000 0,rgb(17,162,215)  100%);
 			width: 120%;
 			height: 120%;
 			top:-10%;
 			left:-10%;
 			z-index: -1;
 		}
-
 		.mofang{
 			position: absolute;
 			left:200px;
 			transform-style:preserve-3d;
 			font-size:0;
-			top:800px;
+			top:100vh;
 			animation:turnTop 10s linear infinite;
 		}
-		.mofang li{
+		.mofang>li{
 			box-sizing: border-box;
 			position: absolute;
-			border:.5px solid #ddd;
 			display: inline-block;
 			background:rgba(0,108,255,0);
+			text-align: center;
 		}
 		@keyframes turnTop{
 			100%{
-				top:-150px;
+				top:-10vh;
 				transform:rotate(360deg);
 			}
 		}
+		@keyframes changeColor{
+			
+		}
+
 	</style>
 </head>
 <body>
