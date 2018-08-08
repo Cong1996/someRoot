@@ -1,4 +1,3 @@
-
 function getTime(time){/*接受字符串或对象，返回与当前时间差*/
 	/*动作发生时间*/
 	let theDate;
@@ -8,7 +7,6 @@ function getTime(time){/*接受字符串或对象，返回与当前时间差*/
 	else{
 		theDate=new Date(time);
 	}
-		console.log(theDate);
 	let	theYear=theDate.getFullYear(),
 		theMonth=theDate.getMonth()+1,
 		theDay=theDate.getDate(),
@@ -41,4 +39,5 @@ function getTime(time){/*接受字符串或对象，返回与当前时间差*/
 	else{
 		return '刚刚';
 	}
-alert(getTime('2018-7-7 11:11:11'));
+
+}
